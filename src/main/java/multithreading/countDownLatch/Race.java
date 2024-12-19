@@ -13,6 +13,11 @@ public class Race {
     private CountDownLatch start;
     private CountDownLatch finish;
 
+    public static void main(String[] args) throws InterruptedException {
+        Race race = new Race("Horse1", "Horse2");
+        race.run();
+    }
+
     private List<String> horses = new ArrayList<>();
 
     public Race(String... names) {
